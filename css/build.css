@@ -66,6 +66,8 @@ header{
 	    justify-content: center;
 	-ms-flex-direction:column;
 	    flex-direction:column;
+	-ms-flex-align: center;
+	    align-items: center;
 	padding:auto;
 	overflow:hidden;
 	margin-bottom:-5.5rem;
@@ -215,10 +217,9 @@ header{
 #skills .item{
 	transition: all 0.2s ease;
 	padding:1rem;
-	min-width:12rem;
+	/*min-width:12rem;*/
 	width:calc(100%/6);
-	-ms-flex-preferred-size:calc(100%/6);
-	    flex-basis:calc(100%/6);
+	/*flex-basis:calc(100%/6);*/
 	display:-ms-flexbox;
 	display:flex;
 	-ms-flex-direction: column;
@@ -466,6 +467,9 @@ footer .social a{
 	    -ms-flex-wrap: wrap;
 	        flex-wrap: wrap;
 	}
+	#skills .item{
+		width:calc(100%/3);
+	}
 	#portfolio .grid .itemWrapper{
 		-ms-flex-preferred-size:100%;
 		    flex-basis:100%;
@@ -508,6 +512,9 @@ footer .social a{
 		font-size:1.3rem;
 		padding:0.75rem 1rem 0.75rem 2rem;
 		margin:0 0 1rem -2rem;
+	}
+	#skills .item{
+		width:calc(100%/2);
 	}
 	#portfolio .grid .itemWrapper{
 		-ms-flex-preferred-size:100%;
