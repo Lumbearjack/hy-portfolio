@@ -327,7 +327,7 @@ header{
 	letter-spacing: 1px;
 	margin:1.5rem 0 0 0;
 	font-weight: 500;
-	font-size:1.4rem;
+	font-size:1.7rem;
 	color:white;
 	text-decoration: none;
 }
@@ -340,6 +340,7 @@ header{
 	width:100%;
 	overflow:hidden;
 	font-size:0;
+	box-shadow:0px 6px 12px rgba(0,0,0,0.7);
 }
 #portfolio .grid .item a img{
 	position:absolute;
