@@ -22,17 +22,14 @@ gulp.task('bs', () => {
 });
 
 gulp.task("styles", () => {
-    return gulp.src("./src/styles/**/*.scss")
-    .pipe(sass().on("error",sass.logError))
+    return gulp.src("css/styles.css")
     .pipe(autoprefixer('last 2 versions', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-    .pipe(concat("style.css"))
-    .pipe(plumber())
-    .pipe(gulp.dest("./public/styles"))
+    .pipe(concat("build.css"))
+    .pipe(gulp.dest("./css"))
     .pipe(reload({stream: true}));
 });
 
-gulp.task('default', ['bs'], () => {
+gulp.task('default', ['styles','bs'], () => {
     gulp.watch('src/**/*.js',['js']);
-    gulp.watch('./css/styles.css',reload);
-    gulp.watch('./src/styles/*.scss', ['styles']);
+    gulp.watch('./css/styles.css',["styles"]);
 });
