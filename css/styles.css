@@ -52,7 +52,7 @@ header{
 	height: 100vh;
 	width:100%;
 	background: linear-gradient(180deg, rgba(0,0,0, 0.7), rgba(0,0,0, 0.7));
-	box-shadow: 0px 48px 32px rgba(0,0,0,0.25);
+	box-shadow: 0px 32px 32px rgba(0,0,0,0.25);
 }
 /* HEADER */
 .headerContainer{
@@ -151,7 +151,7 @@ header{
 }
 .wrapper{
 	display:flex;
-	max-width:1200px;
+	max-width:1400px;
 	width:100%;
 	margin:auto;
 }
@@ -187,6 +187,7 @@ header{
 #description p{
 	margin:0;
 	padding:0.5rem 0;
+	padding-right:2rem;
 }
 .faded{
 	display:inline-block;
@@ -199,6 +200,12 @@ header{
 	flex-wrap:wrap;
 	justify-content: center;
 	vertical-align: top;
+}
+#description .andand{
+	display:inline-block;
+	color:white;
+	font-size:2rem;
+	text-shadow: 4px 0px 0px rgba(0,0,0,0.5);
 }
 #skills .item{
 	transition: all 0.2s ease;
@@ -234,7 +241,6 @@ header{
 	justify-content: center;
 }
 #portfolio .wrapper{
-	max-width:1200px;
 	margin:auto;
 	display:flex;
 	flex-direction: column;
@@ -421,6 +427,9 @@ footer .social a{
 	}
 	#description .wrapper {
 	    flex-wrap: wrap;
+	}
+	#description p{
+		padding-right:1rem;
 	}
 	#skills .item{
 		width:calc(100%/3);
