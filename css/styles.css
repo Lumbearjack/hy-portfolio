@@ -5,10 +5,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/**{
-	border: 1px solid orange;
-}
-*/
+
 body{
 	position: relative;
 	background:#0A0A0A;
@@ -67,9 +64,6 @@ header{
 	overflow:hidden;
 	margin-bottom:-5.5rem;
 }
-.headerContainher h1{
-	letter-spacing: 4px;
-}
 .headerContainer h2{
 	margin:1rem auto 5.5rem auto;
 	font-weight:400;
@@ -94,6 +88,9 @@ header{
 	left: 0;
 	overflow: hidden;
 	z-index: -100;
+	background: url('../assets/coffee.png');
+	background-size:cover;
+	background-position:center center;
 }
 .headerBGVid{
 	position: absolute;
@@ -135,9 +132,6 @@ header{
 	-webkit-animation-duration: 2s;
 	-webkit-animation-delay: 1s;
 	-webkit-animation-iteration-count: infinite;
-}
-.downarrow a:hover{
-	color: rgba(255,255,255,0.5);
 }
 .noBG{
 	padding-top: 6rem;
@@ -181,7 +175,6 @@ header{
 	padding-left:2rem;
 }
 #description h2{
-	/*display:inline-block;*/
 	background:rgba(255,255,255,0.12);
 	font-size:2rem;
 	padding:0.75rem 2rem 0.75rem 2rem;
@@ -234,12 +227,6 @@ header{
 	text-transform: uppercase;
 	text-align:center;	
 }
-#skills p{
-	display:none;
-	text-align: center;
-	margin:0;
-	line-height:1.4;
-}
 #portfolio{
 	display:flex;
 	flex-direction: column;
@@ -253,7 +240,6 @@ header{
 	justify-content: center;
 	align-items:center;
 }
-
 .heading{
 	display:flex;
 	flex-direction:column;
@@ -292,7 +278,6 @@ header{
 	justify-content: center;
 	vertical-align: middle;
 }
-
 #portfolio h1, #portfolio h1 a{
 	z-index:1;
 	letter-spacing: 1px;
@@ -306,7 +291,7 @@ header{
 	text-decoration: underline;
 }
 #portfolio .imgWrapper{
-	position:relative	;
+	position:relative;
 	padding-top:66%;
 	width:100%;
 	overflow:hidden;
@@ -317,10 +302,6 @@ header{
 	top:0;right:0;left:0;
 	bottom:0;
 	max-width:100%;
-}
-#portfolio .grid .item .overlay{
-	position:absolute;
-	top:0;right:0;bottom:0;left:0;
 }
 div.icons{
 	border-top:1px solid rgba(255,255,255,0.1);
@@ -385,76 +366,48 @@ footer .heading p{
 footer .social a{
 	margin: 0 1rem;
 }
-footer .giantText{
-	user-select:none;
-	cursor:default;
-	margin:0;
-	vertical-align: bottom;
-	opacity:1;
-	color:#0E0E0E;
-}
 .credit{
 	padding-top: 0.5rem;
 	padding-bottom:0;
 	margin:0;
 	color:#777777;
 }
-.dropShadow{
-	box-shadow: 0px 32px 32px rgba(0,0,0,0.3);
-}
-
-
-.longShadowDiv{
-	box-shadow: 0px 32px 32px rgba(0,0,0,0.5);
-}
 .longShadowText{
 	text-shadow: 0px 32px 32px rgba(0,0,0,0.5);
-}
-.shortShadowDiv{
-	box-shadow: 0px 8px 8px rgba(0,0,0,0.3);
-}
-.shortShadowText{
-	text-shadow: 0px 8px 8px rgba(0,0,0,1);
 }
 .squircle{
 	border-radius:4px;
 }
-
 @media (max-width: 1160px) {
 	#description .wrapper {
 	    flex-wrap: wrap;
 	}
-	#description img{
-		padding:0;
-		flex-basis:100%;
-		margin-bottom:2rem;
+	#description .wrapper{
+		align-items:flex-start;
 	}
 	#description img{
-		width:100%;
-		flex-basis: 100%;
-	}
-	#description .block{
-		flex-basis:100%;
-		padding:0;
-		padding-left:0rem;
+		border-top-right-radius: 0px;
 	}
 	#description h2{
-		/*display:inline-block;*/
 		padding:0.75rem 1rem 0.75rem 2rem;
 		margin:0 0 1rem -2rem;
 	}
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+	.headerBGVidContainer video{
+		display:none;
+	}
 	.headerContainer{
 		margin-bottom: 0;
-		/*margin-bottom: -5.5rem;*/
 	}
 	.headerContainer h2{
 		font-size:;
 	}
+	#description img{
+		border-top-right-radius: 4px;
+	}
 	#description h2{
-		/*display:inline-block;*/
 		background:rgba(255,255,255,0.12);
 		font-size:1.5rem;
 		padding:0.75rem 1rem 0.75rem 2rem;
@@ -496,10 +449,8 @@ footer .giantText{
 
 	.headerContainer{
 		margin-bottom: 0;
-		/*margin-bottom: -5.5rem;*/
 	}
 	#description h2{
-		/*display:inline-block;*/
 		background:rgba(255,255,255,0.12);
 		font-size:1.3rem;
 		padding:0.75rem 1rem 0.75rem 2rem;
