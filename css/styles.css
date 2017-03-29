@@ -30,7 +30,7 @@ a{
 	transition:all 0.2s ease;
 }
  a:hover{
-	color:white;
+	color:#fff;
 } 
 header h1{
 	text-align:center;
@@ -221,9 +221,6 @@ header{
 #skills img{
 	height:5rem;
 }
-#skills img:hover{
-	
-}
 #skills h2{
 	margin-bottom:3rem;
 }
@@ -274,7 +271,7 @@ header{
 	min-width:215px;
 }
 #portfolio .grid .itemWrapper:hover{
-	transform: translateY(-0.25rem);
+	transform: translateY(-0.2rem);
 }
 #portfolio .grid .item{
 	position: relative;
@@ -286,6 +283,8 @@ header{
 	vertical-align: middle;
 }
 #portfolio h1, #portfolio h1 a{
+	border-bottom: 2px solid transparent;
+	padding-bottom:0.25rem;
 	z-index:1;
 	letter-spacing: 1px;
 	margin:1.5rem 0 0 0;
@@ -295,7 +294,12 @@ header{
 	text-decoration: none;
 }
 #portfolio h1 a:hover{
-	text-decoration: underline;
+	color:#fff;
+	/*text-decoration: underline;*/
+	border-bottom: 2px solid white;
+}
+#portfolio .post-description{
+	margin:0;
 }
 #portfolio .imgWrapper{
 	position:relative;
@@ -312,9 +316,11 @@ header{
 	max-width:100%;
 }
 div.icons{
-	border-top:1px solid rgba(255,255,255,0.1);
-	padding-top:1rem;
-	height:3rem;
+	/*border-top:1px solid rgba(255,255,255,0.1);
+	border-bottom:1px solid rgba(255,255,255,0.1);*/
+	/*padding:1rem 0rem;*/
+	margin:0.75rem 0 1rem 0;
+	height:2rem;
 	display:flex;
 	flex-wrap:wrap;
 }
@@ -339,7 +345,7 @@ div.icons img{
 	box-shadow: 0px 16px 16px rgba(0,0,0,0.4);
 }
 .button-one:hover, .mailTo:hover{
-	transform: translateY(-0.25rem);
+	transform: translateY(-0.1rem);
 	color:#000;
 	background:#F2F2F2;
 	box-shadow: 0px 20px 24px rgba(0,0,0,0.4);
@@ -349,7 +355,7 @@ div.icons img{
 }
 .button-one:active, .mailTo:active{
 	background:#E0E0E0;
-	transform: translateY(0.10rem);
+	transform: translateY(0rem);
 }
 #contact p{
 	margin:0rem 2rem 1rem 2rem;
