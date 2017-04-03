@@ -224,8 +224,8 @@ header{
 #skills .item{
 	transition: all 0.2s ease;
 	padding:1rem;
-	/*min-width:12rem;*/
-	width:calc(100%/6);
+	min-width:10rem;
+	width:calc(100%/8);
 	/*flex-basis:calc(100%/6);*/
 	display:-ms-flexbox;
 	display:flex;
@@ -244,7 +244,7 @@ header{
 }
 #skills h3{
 	font-weight: 700;
-	font-size:1.3rem;
+	font-size:1.2rem;
 	letter-spacing: 2px;
 	margin: 1.4rem 0 1rem 0;
 	text-transform: uppercase;

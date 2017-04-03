@@ -30,6 +30,7 @@ gulp.task("styles", () => {
 });
 
 gulp.task('default', ['styles','bs'], () => {
-    gulp.watch('src/**/*.js',['js']);
+    gulp.watch('index.html',['bs']);
+    gulp.watch('*.js',['js']);
     gulp.watch('./css/styles.css',["styles"]);
 });
